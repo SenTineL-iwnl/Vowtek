@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vowtek LLC | Staffing & Workforce Solutions</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 15px;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      padding: 0 7%;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 62px;
+      line-height: 1.1;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #d1d5db;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 16px 34px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 90px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-title h2 {
+      font-size: 44px;
+      margin-bottom: 15px;
+      color: #0f172a;
+    }
+
+    .section-title p {
+      color: #6b7280;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      background: white;
+      border-radius: 16px;
+      padding: 35px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-box h3 {
+      margin-bottom: 15px;
+      color: #2563eb;
+      font-size: 26px;
+    }
+
+    .stats {
+      background: #0f172a;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      text-align: center;
+      padding: 70px 7%;
+    }
+
+    .stat h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #60a5fa;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 18px;
+    }
+
+    .contact {
+      background: #2563eb;
+      color: white;
+      text-align: center;
+      border-radius: 20px;
+      padding: 70px 40px;
+    }
+
+    .contact h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Vowtek</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Building High-Performance Teams for Modern Businesses</h1>
+
+    <p>
+      Vowtek LLC provides IT staffing, workforce solutions, and talent acquisition services
+      for startups, enterprises, and growing organizations.
+    </p>
+
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
+</section>
+
+<section class="section" id="services">
+
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>
+      Reliable staffing and recruitment solutions customized to your business needs.
+    </p>
+  </div>
+
+  <div class="services">
+
+    <div class="service-box">
+      <h3>IT Staffing</h3>
+      <p>
+        Skilled software engineers, DevOps specialists, cloud architects,
+        QA automation experts, and data professionals.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <h3>Contract Hiring</h3>
+      <p>
+        Flexible hiring solut
