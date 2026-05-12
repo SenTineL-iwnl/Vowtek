@@ -2,226 +2,377 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vowtek LLC | Staffing & Workforce Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vowtek LLC | IT Staffing & Workforce Solutions</title>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
     }
 
-    body {
-      background: #ffffff;
-      color: #111827;
-      line-height: 1.6;
+    html{
+      scroll-behavior:smooth;
     }
 
-    header {
-      background: #0f172a;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    body{
+      background:#ffffff;
+      color:#111827;
+      line-height:1.6;
     }
 
-    .logo {
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
+    header{
+      background:#0f172a;
+      padding:18px 7%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 30px;
-      font-size: 15px;
+    .logo{
+      color:white;
+      font-size:30px;
+      font-weight:bold;
     }
 
-    .hero {
-      background: linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
-      min-height: 85vh;
-      display: flex;
-      align-items: center;
-      padding: 0 7%;
-      color: white;
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:28px;
+      font-size:15px;
+      transition:0.3s;
     }
 
-    .hero-content {
-      max-width: 700px;
+    nav a:hover{
+      color:#60a5fa;
     }
 
-    .hero h1 {
-      font-size: 62px;
-      line-height: 1.1;
-      margin-bottom: 25px;
+    .hero{
+      min-height:90vh;
+      background:
+      linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)),
+      url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1800&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      padding:0 7%;
+      color:white;
     }
 
-    .hero p {
-      font-size: 20px;
-      color: #d1d5db;
-      margin-bottom: 35px;
+    .hero-content{
+      max-width:750px;
     }
 
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: white;
-      padding: 16px 34px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
+    .hero h1{
+      font-size:68px;
+      line-height:1.1;
+      margin-bottom:25px;
     }
 
-    .section {
-      padding: 90px 7%;
+    .hero p{
+      font-size:21px;
+      color:#d1d5db;
+      margin-bottom:35px;
+      max-width:650px;
     }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 55px;
+    .btn{
+      display:inline-block;
+      background:#2563eb;
+      color:white;
+      padding:16px 34px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
     }
 
-    .section-title h2 {
-      font-size: 44px;
-      margin-bottom: 15px;
-      color: #0f172a;
+    .btn:hover{
+      background:#1d4ed8;
+      transform:translateY(-2px);
     }
 
-    .section-title p {
-      color: #6b7280;
-      max-width: 700px;
-      margin: auto;
+    .section{
+      padding:90px 7%;
     }
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
     }
 
-    .service-box {
-      background: white;
-      border-radius: 16px;
-      padding: 35px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      transition: 0.3s;
+    .section-title h2{
+      font-size:46px;
+      color:#0f172a;
+      margin-bottom:15px;
     }
 
-    .service-box:hover {
-      transform: translateY(-8px);
+    .section-title p{
+      max-width:700px;
+      margin:auto;
+      color:#6b7280;
+      font-size:18px;
     }
 
-    .service-box h3 {
-      margin-bottom: 15px;
-      color: #2563eb;
-      font-size: 26px;
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
     }
 
-    .stats {
-      background: #0f172a;
-      color: white;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
-      text-align: center;
-      padding: 70px 7%;
+    .service-box{
+      background:white;
+      border-radius:18px;
+      padding:40px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
     }
 
-    .stat h2 {
-      font-size: 48px;
-      margin-bottom: 10px;
-      color: #60a5fa;
+    .service-box:hover{
+      transform:translateY(-10px);
     }
 
-    .about {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 50px;
-      align-items: center;
+    .service-box h3{
+      color:#2563eb;
+      margin-bottom:18px;
+      font-size:28px;
     }
 
-    .about img {
-      width: 100%;
-      border-radius: 18px;
+    .service-box p{
+      color:#4b5563;
     }
 
-    .contact {
-      background: #2563eb;
-      color: white;
-      text-align: center;
-      border-radius: 20px;
-      padding: 70px 40px;
+    .stats{
+      background:#0f172a;
+      color:white;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:40px;
+      text-align:center;
+      padding:70px 7%;
     }
 
-    .contact h2 {
-      font-size: 42px;
-      margin-bottom: 20px;
+    .stat h2{
+      font-size:54px;
+      color:#60a5fa;
+      margin-bottom:10px;
     }
 
-    .contact p {
-      font-size: 18px;
-      margin-bottom: 25px;
+    .industries{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
     }
 
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      font-size: 14px;
+    .industry{
+      background:#f8fafc;
+      padding:35px;
+      border-radius:14px;
+      border-left:5px solid #2563eb;
     }
 
-    @media(max-width: 768px) {
-      .hero h1 {
-        font-size: 42px;
+    .industry h3{
+      margin-bottom:12px;
+      color:#0f172a;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:60px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .about h2{
+      font-size:44px;
+      margin-bottom:20px;
+      color:#0f172a;
+    }
+
+    .about p{
+      color:#4b5563;
+      margin-bottom:18px;
+      font-size:17px;
+    }
+
+    .process{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .process-box{
+      background:white;
+      border-radius:16px;
+      padding:35px;
+      text-align:center;
+      box-shadow:0 8px 20px rgba(0,0,0,0.07);
+    }
+
+    .process-box h3{
+      font-size:50px;
+      color:#2563eb;
+      margin-bottom:10px;
+    }
+
+    .testimonial-section{
+      background:#f8fafc;
+    }
+
+    .testimonials{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+    }
+
+    .testimonial{
+      background:white;
+      padding:35px;
+      border-radius:16px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .testimonial p{
+      color:#4b5563;
+      margin-bottom:20px;
+    }
+
+    .testimonial h4{
+      color:#111827;
+    }
+
+    .contact-box{
+      background:#2563eb;
+      color:white;
+      border-radius:22px;
+      padding:70px;
+      text-align:center;
+    }
+
+    .contact-box h2{
+      font-size:48px;
+      margin-bottom:20px;
+    }
+
+    .contact-box p{
+      font-size:18px;
+      margin-bottom:15px;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      padding:60px 7% 30px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:40px;
+      margin-bottom:40px;
+    }
+
+    .footer-grid h3{
+      margin-bottom:18px;
+    }
+
+    .footer-grid p,
+    .footer-grid a{
+      color:#cbd5e1;
+      text-decoration:none;
+      display:block;
+      margin-bottom:10px;
+    }
+
+    .copyright{
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,0.1);
+      padding-top:20px;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:42px;
       }
 
-      nav {
-        display: none;
+      .hero p{
+        font-size:18px;
       }
+
+      nav{
+        display:none;
+      }
+
+      .contact-box{
+        padding:40px 25px;
+      }
+
+      .contact-box h2{
+        font-size:34px;
+      }
+
     }
+
   </style>
+
 </head>
+
 <body>
 
 <header>
+
   <div class="logo">Vowtek</div>
 
   <nav>
     <a href="#">Home</a>
     <a href="#services">Services</a>
+    <a href="#industries">Industries</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
+
 </header>
 
 <section class="hero">
+
   <div class="hero-content">
+
     <h1>Building High-Performance Teams for Modern Businesses</h1>
 
     <p>
       Vowtek LLC provides IT staffing, workforce solutions, and talent acquisition services
-      for startups, enterprises, and growing organizations.
+      for startups, enterprises, and growing organizations across the United States.
     </p>
 
     <a href="#contact" class="btn">Get Started</a>
+
   </div>
+
 </section>
 
 <section class="section" id="services">
 
   <div class="section-title">
     <h2>Our Services</h2>
+
     <p>
-      Reliable staffing and recruitment solutions customized to your business needs.
+      Reliable staffing and recruitment solutions customized to your business goals.
     </p>
   </div>
 
@@ -229,13 +380,285 @@
 
     <div class="service-box">
       <h3>IT Staffing</h3>
+
       <p>
-        Skilled software engineers, DevOps specialists, cloud architects,
-        QA automation experts, and data professionals.
+        Software developers, cloud engineers, DevOps specialists, QA automation experts,
+        data engineers, ERP consultants, and cybersecurity professionals.
       </p>
     </div>
 
     <div class="service-box">
       <h3>Contract Hiring</h3>
+
       <p>
-        Flexible hiring solut
+        Flexible hiring models for short-term and long-term projects with fast turnaround times.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <h3>Direct Placement</h3>
+
+      <p>
+        Permanent hiring solutions that help businesses build strong, scalable teams.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="stats">
+
+  <div class="stat">
+    <h2>500+</h2>
+    <p>Successful Placements</p>
+  </div>
+
+  <div class="stat">
+    <h2>100+</h2>
+    <p>Hiring Partners</p>
+  </div>
+
+  <div class="stat">
+    <h2>24/7</h2>
+    <p>Recruitment Support</p>
+  </div>
+
+  <div class="stat">
+    <h2>95%</h2>
+    <p>Client Retention</p>
+  </div>
+
+</section>
+
+<section class="section" id="industries">
+
+  <div class="section-title">
+
+    <h2>Industries We Serve</h2>
+
+    <p>
+      We support companies across multiple industries with specialized recruitment expertise.
+    </p>
+
+  </div>
+
+  <div class="industries">
+
+    <div class="industry">
+      <h3>Information Technology</h3>
+      <p>Cloud, software development, DevOps, AI, cybersecurity, and data engineering.</p>
+    </div>
+
+    <div class="industry">
+      <h3>Healthcare IT</h3>
+      <p>Healthcare systems, EHR platforms, infrastructure, and compliance staffing.</p>
+    </div>
+
+    <div class="industry">
+      <h3>Engineering</h3>
+      <p>Mechanical, electrical, manufacturing, and industrial engineering recruitment.</p>
+    </div>
+
+    <div class="industry">
+      <h3>Business Operations</h3>
+      <p>Project managers, analysts, finance professionals, and operational leadership.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section" id="about">
+
+  <div class="about">
+
+    <div>
+
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+    <div>
+
+      <h2>About Vowtek</h2>
+
+      <p>
+        Vowtek LLC is a modern staffing and workforce solutions company focused on helping
+        businesses scale with exceptional talent and efficient hiring strategies.
+      </p>
+
+      <p>
+        Our team combines recruitment expertise, technology-driven sourcing,
+        and personalized client engagement to deliver high-quality hiring outcomes.
+      </p>
+
+      <p>
+        We believe strong businesses are built by strong people — and we help companies find them.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <div class="section-title">
+
+    <h2>Our Hiring Process</h2>
+
+    <p>
+      Streamlined recruitment designed for speed, quality, and long-term success.
+    </p>
+
+  </div>
+
+  <div class="process">
+
+    <div class="process-box">
+      <h3>1</h3>
+      <p>Understand hiring requirements and project goals.</p>
+    </div>
+
+    <div class="process-box">
+      <h3>2</h3>
+      <p>Source and screen top industry talent.</p>
+    </div>
+
+    <div class="process-box">
+      <h3>3</h3>
+      <p>Coordinate interviews and candidate evaluation.</p>
+    </div>
+
+    <div class="process-box">
+      <h3>4</h3>
+      <p>Deliver qualified professionals quickly and efficiently.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section testimonial-section">
+
+  <div class="section-title">
+
+    <h2>What Clients Say</h2>
+
+    <p>
+      Trusted by businesses looking for reliable staffing and workforce solutions.
+    </p>
+
+  </div>
+
+  <div class="testimonials">
+
+    <div class="testimonial">
+
+      <p>
+        “Vowtek consistently delivered high-quality technical candidates
+        faster than traditional staffing firms.”
+      </p>
+
+      <h4>— Technology Consulting Client</h4>
+
+    </div>
+
+    <div class="testimonial">
+
+      <p>
+        “Their recruitment team understood our needs perfectly and helped us
+        scale our engineering team efficiently.”
+      </p>
+
+      <h4>— Enterprise Client</h4>
+
+    </div>
+
+    <div class="testimonial">
+
+      <p>
+        “Professional communication, fast turnaround, and excellent candidate quality.”
+      </p>
+
+      <h4>— Healthcare IT Partner</h4>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section" id="contact">
+
+  <div class="contact-box">
+
+    <h2>Ready to Build Your Team?</h2>
+
+    <p>
+      Contact Vowtek LLC today for staffing solutions and recruitment support.
+    </p>
+
+    <p>
+      Email: info@vowtekllc.com
+    </p>
+
+    <p>
+      LinkedIn: linkedin.com/company/vowtek
+    </p>
+
+    <br>
+
+    <a href="mailto:info@vowtekllc.com" class="btn" style="background:white;color:#2563eb;">
+      Contact Us
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>Vowtek LLC</h3>
+
+      <p>
+        Modern staffing and workforce solutions for growing businesses.
+      </p>
+
+    </div>
+
+    <div>
+
+      <h3>Services</h3>
+
+      <a href="#">IT Staffing</a>
+      <a href="#">Contract Hiring</a>
+      <a href="#">Direct Placement</a>
+
+    </div>
+
+    <div>
+
+      <h3>Contact</h3>
+
+      <p>info@vowtekllc.com</p>
+      <p>United States</p>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Vowtek LLC. All Rights Reserved.
+  </div>
+
+</footer>
+
+</body>
+</html>
