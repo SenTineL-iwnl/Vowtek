@@ -1,154 +1,169 @@
-<section class="section" id="services" style="background:#f8fafc; padding:120px 7%;">
+<!DOCTYPE html>
+<html lang="en">
 
-  <div style="text-align:center; margin-bottom:80px;">
+<head>
 
-    <h2 style="
-      font-size:64px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vowtek Services</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:#f8fafc;
+      color:#111827;
+    }
+
+    .services-page{
+      padding:120px 7%;
+    }
+
+    .top-section{
+      text-align:center;
+      margin-bottom:90px;
+    }
+
+    .top-section h1{
+      font-size:72px;
       color:#0f172a;
-      margin-bottom:20px;
+      margin-bottom:25px;
       font-weight:700;
-    ">
-      Our Services
-    </h2>
+    }
 
-    <p style="
-      font-size:22px;
+    .top-section p{
+      font-size:24px;
       color:#64748b;
-      max-width:900px;
+      max-width:950px;
       margin:auto;
-      line-height:1.8;
-    ">
-      Premium workforce and staffing solutions designed to help businesses scale with exceptional talent.
+      line-height:1.9;
+    }
+
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+      gap:40px;
+    }
+
+    .service-card{
+      background:white;
+      padding:60px 45px;
+      border-radius:28px;
+      box-shadow:0 18px 40px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .service-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .icon-box{
+      width:85px;
+      height:85px;
+      background:#dbeafe;
+      border-radius:22px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:40px;
+      margin-bottom:35px;
+    }
+
+    .service-card h2{
+      font-size:40px;
+      margin-bottom:22px;
+      color:#0f172a;
+    }
+
+    .service-card p{
+      font-size:20px;
+      color:#475569;
+      line-height:1.9;
+    }
+
+    @media(max-width:768px){
+
+      .top-section h1{
+        font-size:48px;
+      }
+
+      .top-section p{
+        font-size:18px;
+      }
+
+      .service-card{
+        padding:45px 30px;
+      }
+
+      .service-card h2{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<section class="services-page">
+
+  <div class="top-section">
+
+    <h1>Our Services</h1>
+
+    <p>
+      Vowtek LLC delivers premium staffing and workforce solutions designed to help businesses
+      scale with exceptional talent, faster hiring, and reliable recruitment support.
     </p>
 
   </div>
 
-  <div style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-    gap:40px;
-  ">
+  <div class="services-grid">
 
-    <div style="
-      background:white;
-      border-radius:24px;
-      padding:60px 45px;
-      box-shadow:0 15px 35px rgba(0,0,0,0.08);
-      transition:0.3s;
-    ">
+    <div class="service-card">
 
-      <div style="
-        width:70px;
-        height:70px;
-        background:#dbeafe;
-        border-radius:18px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        margin-bottom:35px;
-        font-size:34px;
-      ">
-        💻
-      </div>
+      <div class="icon-box">💻</div>
 
-      <h3 style="
-        font-size:36px;
-        margin-bottom:22px;
-        color:#0f172a;
-      ">
-        IT Staffing
-      </h3>
+      <h2>IT Staffing</h2>
 
-      <p style="
-        font-size:19px;
-        color:#475569;
-        line-height:1.9;
-      ">
-        Delivering highly skilled software engineers, cloud specialists,
-        DevOps experts, QA automation professionals, and data consultants
-        for modern technology-driven organizations.
+      <p>
+        Providing highly skilled software engineers, cloud architects,
+        DevOps specialists, QA automation professionals, cybersecurity experts,
+        and data consultants for modern enterprises.
       </p>
 
     </div>
 
-    <div style="
-      background:white;
-      border-radius:24px;
-      padding:60px 45px;
-      box-shadow:0 15px 35px rgba(0,0,0,0.08);
-      transition:0.3s;
-    ">
+    <div class="service-card">
 
-      <div style="
-        width:70px;
-        height:70px;
-        background:#dbeafe;
-        border-radius:18px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        margin-bottom:35px;
-        font-size:34px;
-      ">
-        📈
-      </div>
+      <div class="icon-box">📈</div>
 
-      <h3 style="
-        font-size:36px;
-        margin-bottom:22px;
-        color:#0f172a;
-      ">
-        Contract Hiring
-      </h3>
+      <h2>Contract Hiring</h2>
 
-      <p style="
-        font-size:19px;
-        color:#475569;
-        line-height:1.9;
-      ">
-        Flexible workforce solutions for project-based hiring,
-        contract staffing, and scalable resource augmentation
-        with rapid turnaround times.
+      <p>
+        Flexible staffing solutions for short-term and long-term projects
+        with rapid hiring turnaround and scalable workforce support.
       </p>
 
     </div>
 
-    <div style="
-      background:white;
-      border-radius:24px;
-      padding:60px 45px;
-      box-shadow:0 15px 35px rgba(0,0,0,0.08);
-      transition:0.3s;
-    ">
+    <div class="service-card">
 
-      <div style="
-        width:70px;
-        height:70px;
-        background:#dbeafe;
-        border-radius:18px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        margin-bottom:35px;
-        font-size:34px;
-      ">
-        🤝
-      </div>
+      <div class="icon-box">🤝</div>
 
-      <h3 style="
-        font-size:36px;
-        margin-bottom:22px;
-        color:#0f172a;
-      ">
-        Direct Placement
-      </h3>
+      <h2>Direct Placement</h2>
 
-      <p style="
-        font-size:19px;
-        color:#475569;
-        line-height:1.9;
-      ">
-        Helping businesses hire top full-time talent through strategic sourcing,
+      <p>
+        Helping organizations hire top full-time professionals through strategic sourcing,
         technical screening, and personalized recruitment solutions.
       </p>
 
@@ -157,3 +172,7 @@
   </div>
 
 </section>
+
+</body>
+
+</html>
